@@ -59,7 +59,7 @@ h2 {
  }
 h3 {
     font-size: 90%; 
-    color: rgb(242, 242, 242); 
+    color: rgb(0, 0, 0); 
     padding-left: 15px;
     text-align: center;
 }
@@ -109,6 +109,9 @@ a:hover {
  color: rgb(0, 101, 252);
  text-decoration: none;
 }
+a:active, a:focus {
+ color: red;
+}
 
 .header_link
 {
@@ -140,7 +143,7 @@ a:hover {
 {
     display: inline-flex;
     flex-direction: row;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 1px;
         border-top-color: currentcolor;
@@ -202,12 +205,13 @@ a:hover {
     border-style: solid;
     border-color: rgb(242, 242, 242);
     overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.bulle_H
-{
-    display: inline-block;
-    flex-direction:column;
+.bulle_H {
+    display: inline-flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 30px;
     border-color: white;
@@ -234,6 +238,8 @@ a:hover {
     width: 400px;
     height: 120px;
     overflow: hidden;
+    justify-content: space-around;
+    align-items: normal;
 }
 
 .bulle_A
@@ -250,71 +256,89 @@ a:hover {
     align-content: center;
     justify-content: center;
     overflow: hidden;
+    justify-content: space-around;
 }
 
 #bulle_A_1
 {
     display: flex;
     width: 100%;
-    height: 99%;
+    height:90%;
 }
 #bulle_A_2
 {
-    display:block;
+    display:flex;
     width: 100%;
-    height: 59%;
+    height: 50%;
 }
 #bulle_A_3
 {
-    display: inline-block;
+    display: flex;
     width: 100%;
-    height: 39%;
+    height: 30%;
+    margin-top: 14%;
 }
 #bulle_A_4
 {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 #bulle_A_5
 {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 49%;
+    height: 35%;
 }
 #bulle_A_6
 {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 49%;
+    height: 45%;
+    margin-top: 12%;
 }
 
-.hebergement
-{
+.hebergement {
     display: inline-flex;
     flex-wrap: wrap;
+    background-color: rgb(242, 242, 242);
     padding-left: 4%;
     padding-right: 4%;
     margin-right: 2%;
-    flex-direction:row;
+    flex-direction: row;
     width: 55%;
-    height: 50%;
+    font-size: 100%;
+    display: inline-flex;
+    border-radius: 30px;
+    padding: 1%;
+    margin: 5px;
+    justify-content: space-around;
 }
 
-.populaires
-{
+.populaires {
     flex-direction: column;
+    background-color: rgb(242, 242, 242);
     width: 35%;
     margin-right: 2%;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
+    font-size: 100%;
+    display: inline-flex;
+    border-radius: 30px;
+    padding: 1%;
+    margin: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    align-items: center;
 }
 
 .activite
 {
     display: flex;
-    width: 90%;
-    height: 500px;
+    width: 93%;
+    height: 600px;
     margin-left: 2%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -353,15 +377,8 @@ a:hover {
 
 .filtre_icon
 {
-    font-size: 24px;
-    color: rgb(1, 82, 255);
-    border-radius: 50%;
-    background-color: pink;
-    display: flex !important;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
+    font-size:24px;
+    color:rgb(1, 82, 255);
 }
 
 .image_H
@@ -378,31 +395,83 @@ a:hover {
 
 #image_A_1
 {
-    width:300px;
+    width: 360px;;
     height:90%;
 }
 #image_A_2
 {
-    width:300px;
+    width:360px;
     height:90%;
 }
 #image_A_3
 {
-    width:300px;
+    width:360px;
     height:90%;
 }
 #image_A_4
 {
-    width:300px;
+    width:360px;
     height:90%;
 }
 #image_A_5
 {
-    width:300px;
+    width:360px;
     height:90%;
 }
 #image_A_6
 {
-    width:300px;
+    width:360px;
     height:90%;
+}
+
+.filtre_icon
+{
+    font-size: 24px;
+    color: rgb(1, 82, 255);
+    border-radius: 50%;
+    background-color: rgb(222, 235, 255);
+    display: flex !important;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.filtre_star
+{
+    color: rgb(1, 82, 255);
+}
+.filtre_nostar
+{
+    color: rgb(242, 242, 242);
+}
+
+
+.activite_block
+{
+    height: 100%;
+    width: auto;
+}
+
+#section1 {
+    width: 98%;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 2%;
+}
+
+#infobulle {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#text_infobulle {
+    margin-left: 1%;
+}
+
+.text_activite {
+    margin-left: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
