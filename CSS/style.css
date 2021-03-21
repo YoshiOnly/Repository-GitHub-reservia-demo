@@ -39,7 +39,6 @@ section {
 
 footer {
     background-color: rgb(242, 242, 242); 
-    font-family: raleway, regular 400; 
     font-size: 100%;
     display: flex;
     justify-content: space-around;
