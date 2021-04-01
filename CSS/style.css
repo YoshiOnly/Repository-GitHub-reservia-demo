@@ -830,7 +830,7 @@ a:active, a:focus {
 
     .image_H {
         width: 100%;
-        height: 100%;
+        height: 70%;
         object-fit: cover;
     }
 
@@ -852,6 +852,12 @@ a:active, a:focus {
         display:unset;
         font-size: 24px;
         line-height: 0px;
+    }
+
+    .image_A {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
     }
 }
 
