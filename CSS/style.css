@@ -8,9 +8,7 @@
 }
 
 html, body {
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 0px;
+    margin:0%
  }
 
 
@@ -30,10 +28,12 @@ nav {
     flex-direction:row;
 }
 
-body {
+main {
  background-color: rgb(255, 255, 255); 
  font-family: "raleway"; 
  font-size: 100%;
+ margin-left: 1%;
+ margin-right: 1%;
  }
 article {
     background-color: rgb(242, 242, 242); 
@@ -240,6 +240,7 @@ a:active, a:focus {
     border-top-width: 3px !important;
     border-style: solid;
     border-color: white;
+    padding-top: 5vh;
 }
 .bulle_M:hover
 {
@@ -262,7 +263,7 @@ a:active, a:focus {
     margin: 10px;
     padding: 0px;
     border: 1px;
-    border-radius: 30px;
+    border-radius: 15px;
     border-style: solid;
     border-color: rgb(242, 242, 242);
     overflow: hidden;
@@ -284,11 +285,19 @@ a:active, a:focus {
     justify-content: center;
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 10px 0.01px rgb(196, 196, 196);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
 }
 
 .bulle_H_txt
 {
-    margin-left: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 7%;
+    background-color: white;
+    width: 100%;
 }
 
 .bulle_P
@@ -301,8 +310,8 @@ a:active, a:focus {
     border-color: white;
     border-style: solid;
     margin: 10px;
-    width: 20vw;
-    height: 120px;
+    width: 90%;
+    height: 135px;
     overflow: hidden;
     justify-content: space-around;
     align-items: normal;
@@ -315,13 +324,16 @@ a:active, a:focus {
     flex-direction: column;
     align-content: center;
     align-items: first baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
-    margin: 10px;
-    width: 40%;
+    margin: 0%;
+    width: 46%;
     height: 100%;
+    font-size: 16px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .bulle_A
@@ -330,7 +342,7 @@ a:active, a:focus {
     flex-direction:column;
     background-color: white;
     border-radius: 30px;
-    width: 20vw;
+    width: 21vw;
     margin: 2%;
     margin-right: 2%;
     align-content: center;
@@ -338,33 +350,25 @@ a:active, a:focus {
     overflow: hidden;
     justify-content: space-around;
     -webkit-box-shadow: 0px 0px 10px 0.01px rgb(196, 196, 196);
+    position: relative;
 }
 
-#bulle_A_1
+.block_90
 {
-    height:90%;
-}
-#bulle_A_2
-{
-    height: 50%;
-}
-#bulle_A_3
-{
-    height: 30%;
-    margin-top: 15%;
-}
-#bulle_A_4
-{
+    display: flex;
     height: 90%;
 }
-#bulle_A_5
+
+.block_60
 {
-    height: 35%;
+    display: flex;
+    height: 55%;
 }
-#bulle_A_6
+
+.block_30
 {
-    height: 45%;
-    margin-top: 15%;
+    display: flex;
+    height: 30%;
 }
 
 .hebergement {
@@ -420,11 +424,10 @@ a:active, a:focus {
 {
     display: flex;
     width: 100%;
-    height: 600px;
     margin-left: 0%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:space-between;
     overflow: hidden;
     background-color: white;
     margin-top: 3%;
@@ -455,6 +458,7 @@ a:active, a:focus {
     width:100px;
     height:50px;
     float: left;
+    padding-top: 2%;
 }
 
 #mapmarker
@@ -474,20 +478,21 @@ a:active, a:focus {
 .image_H
 {
     width:100%;
-    height:70%;
+    height:100%;
     object-fit: cover;
 }
 
 .image_P
 {
     width:50%;
-    height:120px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .image_A
 {
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -516,8 +521,7 @@ a:active, a:focus {
 
 .activite_block
 {
-    height: 100%;
-    width: auto;
+    width: 25%;
 }
 
 #section1 {
@@ -546,10 +550,15 @@ a:active, a:focus {
 
 .text_activite {
     display: block;
-    margin-left: 7%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    font-size: 14px;
+    width: 100%;
 }
 
 #text_inscription
@@ -577,7 +586,6 @@ a:active, a:focus {
 #inscription
 {
     float: right;
-    padding-top: 5px;
 }
 
 #afficher_plus
@@ -591,6 +599,16 @@ a:active, a:focus {
 {
     width: auto;
     display:none;
+}
+
+.block_bottom
+{
+    margin-top:10%;
+}
+
+.block_P
+{
+    width: 90%;
 }
 
 @media screen and (max-width: 1000px)
@@ -690,6 +708,7 @@ a:active, a:focus {
 
     .activite_block {
         width: 95%;
+        height: 40%;
     }
 
     #inscription
@@ -701,6 +720,8 @@ a:active, a:focus {
     .logo_R{
         width: 30%;
         margin-left: 10%;
+        height: auto;
+        padding-top: 0%;
     }
 
     #text_inscription
@@ -741,6 +762,7 @@ a:active, a:focus {
         border-bottom-width: 3px;
         border-bottom-style: solid;
         width: 50%;
+        padding-top: 0%;
     }
 
     .bulle_H
@@ -751,10 +773,12 @@ a:active, a:focus {
         margin-bottom: 4%;
         margin-left: 0px;
         margin-right: 0px;
+        
+        border-style: unset;
     }
 
     .footer_list_link {
-        font-size: 32px;
+        font-size: 22px;
         margin-left: 4%;
     }
 
@@ -781,14 +805,13 @@ a:active, a:focus {
 
     .footer_list_titre {
         margin-left:4%;
-        font-size: 44px;
+        font-size: 24px;
     }
 
     .text_activite {
         margin-top: 10px;
-        margin-bottom: 10px;
-        padding-bottom: 2%;
-        padding-top: 2%;
+        padding-bottom: 4%;
+        padding-top: 5%;
         font-size: 24px;
     }
 
@@ -824,33 +847,21 @@ a:active, a:focus {
         color: transparent;
     }
 
-    #bulle_A_3
-    {
-        margin-top: 8%;
-    }
-
-    #bulle_A_6
-    {
-        height: 45%;
-        margin-top: 8%;
-    }
-
     .image_H {
         width: 100%;
-        height: 70%;
+        height: 100%;
         object-fit: cover;
     }
 
     .bulle_H_txt {
-        margin-left: 15px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        align-items: ;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-        height: 30%;
-        font-size: 24px;
+        padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: ;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    font-size: 24px;
     }
 
     .search_icon
@@ -863,24 +874,41 @@ a:active, a:focus {
 
     .image_A {
         width: 100%;
-        height: 80%;
+        height: 100%;
         object-fit: cover;
     }
 
     #hebergement_txt {
-        font-size: 32px;
+        font-size: 24px;
         margin-left: 8%;
+    }
+
+    .header_link {
+        font-size: 24px;
+    }
+
+    .activite_block{
+        display: block;
+    }
+
+    .block_bottom
+    {
+    margin-top:unset;
     }
 }
 
 @media screen and (max-width: 600px)
 {
     .bulle_P_txt {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .bulle_H_txt {
-        font-size: 18px;
+        font-size: 12px;
+    }
+
+    .text_activite {
+        font-size: 12px;
     }
 
 }
