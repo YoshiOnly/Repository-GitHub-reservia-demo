@@ -55,7 +55,7 @@ nav {
     flex-direction: row;
     color: rgb(242, 242, 242);
     background-color: rgb(255, 255, 255); 
-    border-color: rgb(255, 255, 255); 
+    border-color: transparent;
     border: 3px;
     margin: 0px;
     padding-top: 1%;
@@ -241,7 +241,7 @@ nav {
 .bulle_H {
     display: inline-flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255); 
+    background-color: white; 
     border-radius: 30px;
     border-color: rgb(255, 255, 255); 
     border-style: solid;
@@ -324,7 +324,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255); 
+    background-color: white; 
     border-radius: 30px;
     border-color: rgb(255, 255, 255); 
     border-style: solid;
@@ -696,13 +696,11 @@ div{
     }
     .bulle_H_txt {
         padding-top: 1%;
-    padding-bottom: 1%;
-    align-items: ;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    font-size: 24px;
+        padding-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        font-size: 24px;
     }
     #hebergement_txt {
         font-size: 24px;
